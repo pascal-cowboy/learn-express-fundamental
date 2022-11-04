@@ -4,13 +4,13 @@ const logger = require("./logger");
 //! req => middleware = res
 
 app.use(logger);
-
 app.get("/", logger, (req, res) => {
   res.send("home");
 });
 app.get("/about", logger, (req, res) => {
   res.send("about");
 });
+
 app.get("/products", logger, (req, res) => {
   res.send("products");
 });
