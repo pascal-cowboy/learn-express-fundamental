@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const logger = require("./logger");
-//! req => middleware = res
 
 app.use(logger);
 app.get("/", logger, (req, res) => {
